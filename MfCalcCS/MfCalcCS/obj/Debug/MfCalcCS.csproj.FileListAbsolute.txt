@@ -1,0 +1,10 @@
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.exe.config
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.exe
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.pdb
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.AssemblyReference.cache
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.MainMenu.resources
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.Properties.Resources.resources
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.GenerateResource.cache
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.CoreCompileInputs.cache
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe
+C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.pdb
