@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitRepos\\calcCS\\MfCalcCS\\",
+  "WorkspaceRootPath": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|c:\\gitrepos\\calccs\\mfcalccs\\mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|d:\\notegitrepos\\calccs\\mfcalccs\\mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|c:\\gitrepos\\calccs\\mfcalccs\\mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|c:\\gitrepos\\calccs\\mfcalccs\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|c:\\gitrepos\\calccs\\mfcalccs\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,22 +32,20 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainMenu.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\MainMenu.cs",
               "ToolTip": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "MfCalcCS\\MainMenu.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T00:07:32.673Z",
-              "IsPinned": true,
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Calculator.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\Calculator.cs",
-              "ToolTip": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "MfCalcCS\\Calculator.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T00:30:13.901Z",
@@ -58,27 +56,24 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "History.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\History.cs",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\History.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\History.cs",
               "ToolTip": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\History.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "MfCalcCS\\History.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T00:25:05.793Z",
-              "IsPinned": true,
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\MainMenu.cs",
-              "ToolTip": "C:\\GitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
+              "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeToolTip": "MfCalcCS\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:35:34.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T00:35:34.908Z"
             }
           ]
         }
