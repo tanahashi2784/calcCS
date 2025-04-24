@@ -8,3 +8,15 @@ C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.GenerateResource.
 C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.CoreCompileInputs.cache
 C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe
 C:\GitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.pdb
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.exe.config
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.exe
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\bin\Debug\MfCalcCS.pdb
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.AssemblyReference.cache
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.Calculator.resources
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.History.resources
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.MainMenu.resources
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.Properties.Resources.resources
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.GenerateResource.cache
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.CoreCompileInputs.cache
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.pdb

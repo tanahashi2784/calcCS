@@ -28,29 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.HtoMButton = new System.Windows.Forms.Button();
+            this.callResultButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // HtoMButton
             // 
-            this.button1.AutoSize = true;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(586, 0);
-            this.button1.MaximumSize = new System.Drawing.Size(110, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 200);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.HtoMButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HtoMButton.AutoSize = true;
+            this.HtoMButton.Location = new System.Drawing.Point(762, 0);
+            this.HtoMButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HtoMButton.MaximumSize = new System.Drawing.Size(147, 250);
+            this.HtoMButton.Name = "HtoMButton";
+            this.HtoMButton.Size = new System.Drawing.Size(147, 203);
+            this.HtoMButton.TabIndex = 0;
+            this.HtoMButton.Text = "メインメニューへ";
+            this.HtoMButton.UseVisualStyleBackColor = true;
+            this.HtoMButton.Click += new System.EventHandler(this.HtoMButton_Click);
+            // 
+            // callResultButton
+            // 
+            this.callResultButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.callResultButton.Location = new System.Drawing.Point(762, 281);
+            this.callResultButton.Margin = new System.Windows.Forms.Padding(4);
+            this.callResultButton.MaximumSize = new System.Drawing.Size(400, 130);
+            this.callResultButton.MinimumSize = new System.Drawing.Size(100, 100);
+            this.callResultButton.Name = "callResultButton";
+            this.callResultButton.Size = new System.Drawing.Size(147, 109);
+            this.callResultButton.TabIndex = 1;
+            this.callResultButton.Text = "計算結果を呼び出し";
+            this.callResultButton.UseVisualStyleBackColor = true;
             // 
             // History
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(696, 410);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(909, 479);
+            this.Controls.Add(this.callResultButton);
+            this.Controls.Add(this.HtoMButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "History";
             this.Text = "History";
             this.ResumeLayout(false);
@@ -60,6 +78,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button HtoMButton;
+        private System.Windows.Forms.Button callResultButton;
     }
 }

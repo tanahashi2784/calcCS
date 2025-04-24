@@ -16,5 +16,17 @@ namespace MfCalcCS
         {
             InitializeComponent();
         }
+
+        private MainMenu _mainMenuInstance;
+
+        private void HtoMButton_Click(object sender, EventArgs e)
+        {
+            if (_mainMenuInstance == null || _mainMenuInstance.IsDisposed)
+            {
+                _mainMenuInstance = new MainMenu();
+            }
+            this.Hide();
+            _mainMenuInstance.Show();
+        }
     }
 }
