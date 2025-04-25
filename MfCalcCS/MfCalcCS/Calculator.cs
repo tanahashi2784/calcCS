@@ -13,12 +13,15 @@ namespace MfCalcCS
 {
     public partial class Calculator : Form
     {
-        double num1 = 0;
-        double num2 = 0;
-        double result = 0;
-        int ope = -1;
-        bool beforeNum = false;
-        bool dotflg = false;
+        double num = 0;         //値を一時的に格納
+        double num1 = 0;        //値1を格納
+        double num2 = 0;        //値2を格納
+        double result = 0;      //結果
+        int ope = -1;           //演算子をenumに基づいて判別
+        bool afterNum = false; //以前の入力が数字かどうか
+        bool dotflg = false;    //ドットを入力したか
+        int dotCount = 0;       //ドット入力後〇桁目
+        double addNum = 0;
 
         enum Operator
         {
@@ -50,113 +53,311 @@ namespace MfCalcCS
 
         }
 
+        #region //数字ボタンがクリックされたときの処理
+
         private void no0_Click(object sender, EventArgs e)
         {
             //もし前回の入力が数字だったら*10＋入力した数字　以下同
-            if(resultBox.Text!=null)
+            if (afterNum == true)
+            {
+
+            }
+            else 
             {
                 resultBox.Text = "0";
-                num1 = 0;
-            }
-
-            if (beforeNum == true)
-            {
-                num1 *= 10;
-                resultBox.Text = num1.ToString();
+                num = 0;
             }
 
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
 
         }
 
         private void no1_Click(object sender, EventArgs e)
         {
+            addNum = 1;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0;i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else 
+            {
+                num = addNum;
+            }
+
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
         }
 
         private void no2_Click(object sender, EventArgs e)
         {
-            //もし前回の入力が数字だったら*10＋入力した数字　以下同
-            if (resultBox.Text != null)
+            addNum = 2;
+            if (afterNum == true)
             {
-                resultBox.Text = "2";
-                num1 = 2;
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
             }
 
-            if (beforeNum == true)
-            {
-                num1 *= 10;
-                num1 += 2;
-                resultBox.Text = num1.ToString();
-            }
+            resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
         }
 
         private void no3_Click(object sender, EventArgs e)
         {
-            //もし前回の入力が数字だったら*10＋入力した数字　以下同
-            if (resultBox.Text != null)
+            addNum = 3;
+            if (afterNum == true)
             {
-                resultBox.Text = "3";
-                num1 = 3;
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
             }
-            else if (beforeNum == true)
+            else
             {
-                num1 *= 10;
-                num1 += 3;
-                resultBox.Text = num1.ToString();
+                num = addNum;
             }
 
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
         }
 
         private void no4_Click(object sender, EventArgs e)
         {
-            //数字フラグをtrueに
-            beforeNum = true;
+            addNum = 4;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
 
+            resultBox.Text = num.ToString();
+
+            //数字フラグをtrueに
+            afterNum = true;
 
         }
 
         private void no5_Click(object sender, EventArgs e)
         {
+            addNum = 5;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
+
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
 
         }
 
         private void no6_Click(object sender, EventArgs e)
         {
-            //数字フラグをtrueに
-            beforeNum = true;
+            addNum = 6;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
 
+            resultBox.Text = num.ToString();
+
+            //数字フラグをtrueに
+            afterNum = true;
         }
 
         private void no7_Click(object sender, EventArgs e)
         {
+            addNum = 7;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
+
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
 
         }
 
         private void no8_Click(object sender, EventArgs e)
         {
+            addNum = 8;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
+
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
 
         }
 
         private void no9_Click(object sender, EventArgs e)
         {
+            addNum = 9;
+            if (afterNum == true)
+            {
+                if (dotflg == true)
+                {
+                    dotCount++;
+                    for (int i = 0; i < dotCount; i++)
+                    {
+                        addNum *= 0.1;
+                    }
+                    num += addNum;
+                }
+                else
+                {
+                    num *= 10;
+                    num += addNum;
+                }
+            }
+            else
+            {
+                num = addNum;
+            }
+
+            resultBox.Text = num.ToString();
+
             //数字フラグをtrueに
-            beforeNum = true;
+            afterNum = true;
 
         }
+
+        #endregion 
 
         private void dotButton_Click(object sender, EventArgs e)
         {
@@ -212,12 +413,14 @@ namespace MfCalcCS
         private void clearButton_Click(object sender, EventArgs e)
         {
             //全てを初期化する
-            num1 = 0;
-            num2 = 0;
-            ope = -1;
-            result = 0;
-            beforeNum = false;
-            dotflg = false;
+            num = 0;         //値を一時的に格納
+            num1 = 0;        //値1を格納
+            num2 = 0;        //値2を格納
+            result = 0;      //結果
+            ope = -1;           //演算子をenumに基づいて判別
+            afterNum = false; //以前の入力が数字かどうか
+            dotflg = false;    //ドットを入力したか
+            dotCount = 0;       //ドット入力後〇桁目
             resultBox.Text = "";
         }
     }

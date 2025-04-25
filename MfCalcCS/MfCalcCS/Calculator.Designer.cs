@@ -250,10 +250,14 @@
             // 
             // resultBox
             // 
-            this.resultBox.Font = new System.Drawing.Font("MS UI Gothic", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.resultBox.Location = new System.Drawing.Point(64, 66);
+            this.resultBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.resultBox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.resultBox.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.resultBox.Location = new System.Drawing.Point(63, 85);
+            this.resultBox.MaxLength = 10;
             this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(343, 107);
+            this.resultBox.ReadOnly = true;
+            this.resultBox.Size = new System.Drawing.Size(343, 87);
             this.resultBox.TabIndex = 20;
             this.resultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.resultBox.TextChanged += new System.EventHandler(this.resultBox_TextChanged);
