@@ -36,8 +36,8 @@
             // 
             this.HtoMButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.HtoMButton.AutoSize = true;
-            this.HtoMButton.Location = new System.Drawing.Point(762, 0);
-            this.HtoMButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HtoMButton.Location = new System.Drawing.Point(522, 13);
+            this.HtoMButton.Margin = new System.Windows.Forms.Padding(4);
             this.HtoMButton.MaximumSize = new System.Drawing.Size(147, 250);
             this.HtoMButton.Name = "HtoMButton";
             this.HtoMButton.Size = new System.Drawing.Size(147, 203);
@@ -49,7 +49,7 @@
             // callResultButton
             // 
             this.callResultButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.callResultButton.Location = new System.Drawing.Point(762, 281);
+            this.callResultButton.Location = new System.Drawing.Point(522, 481);
             this.callResultButton.Margin = new System.Windows.Forms.Padding(4);
             this.callResultButton.MaximumSize = new System.Drawing.Size(400, 130);
             this.callResultButton.MinimumSize = new System.Drawing.Size(100, 100);
@@ -65,10 +65,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(909, 479);
+            this.ClientSize = new System.Drawing.Size(682, 603);
             this.Controls.Add(this.callResultButton);
             this.Controls.Add(this.HtoMButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "History";
             this.Text = "History";
             this.ResumeLayout(false);

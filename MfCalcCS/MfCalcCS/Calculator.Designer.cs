@@ -49,12 +49,14 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.resultBox = new System.Windows.Forms.TextBox();
             this.calculationFormula = new System.Windows.Forms.TextBox();
+            this.registButton = new System.Windows.Forms.Button();
+            this.callFormula = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CtoMButton
             // 
             this.CtoMButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CtoMButton.Location = new System.Drawing.Point(542, 0);
+            this.CtoMButton.Location = new System.Drawing.Point(467, 13);
             this.CtoMButton.Margin = new System.Windows.Forms.Padding(4);
             this.CtoMButton.MaximumSize = new System.Drawing.Size(400, 130);
             this.CtoMButton.MinimumSize = new System.Drawing.Size(100, 100);
@@ -68,7 +70,7 @@
             // saveResultButton
             // 
             this.saveResultButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.saveResultButton.Location = new System.Drawing.Point(542, 250);
+            this.saveResultButton.Location = new System.Drawing.Point(467, 490);
             this.saveResultButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveResultButton.MaximumSize = new System.Drawing.Size(400, 130);
             this.saveResultButton.MinimumSize = new System.Drawing.Size(100, 100);
@@ -276,11 +278,39 @@
             this.calculationFormula.TabIndex = 21;
             this.calculationFormula.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // registButton
+            // 
+            this.registButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.registButton.Location = new System.Drawing.Point(467, 273);
+            this.registButton.Margin = new System.Windows.Forms.Padding(4);
+            this.registButton.MaximumSize = new System.Drawing.Size(400, 130);
+            this.registButton.MinimumSize = new System.Drawing.Size(100, 100);
+            this.registButton.Name = "registButton";
+            this.registButton.Size = new System.Drawing.Size(202, 100);
+            this.registButton.TabIndex = 22;
+            this.registButton.Text = "関数・公式を登録";
+            this.registButton.UseVisualStyleBackColor = true;
+            // 
+            // callFormula
+            // 
+            this.callFormula.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.callFormula.Location = new System.Drawing.Point(467, 382);
+            this.callFormula.Margin = new System.Windows.Forms.Padding(4);
+            this.callFormula.MaximumSize = new System.Drawing.Size(400, 130);
+            this.callFormula.MinimumSize = new System.Drawing.Size(100, 100);
+            this.callFormula.Name = "callFormula";
+            this.callFormula.Size = new System.Drawing.Size(202, 100);
+            this.callFormula.TabIndex = 23;
+            this.callFormula.Text = "関数・公式を呼び出し";
+            this.callFormula.UseVisualStyleBackColor = true;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 589);
+            this.ClientSize = new System.Drawing.Size(682, 603);
+            this.Controls.Add(this.callFormula);
+            this.Controls.Add(this.registButton);
             this.Controls.Add(this.calculationFormula);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.clearButton);
@@ -332,5 +362,7 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.TextBox calculationFormula;
+        private System.Windows.Forms.Button registButton;
+        private System.Windows.Forms.Button callFormula;
     }
 }

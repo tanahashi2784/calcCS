@@ -16,7 +16,6 @@ namespace MfCalcCS
     {
         double num = 0;         //値を一時的に格納
         double num1 = 0;        //値1を格納
-        double num2 = 0;        //値2を格納
         double result = 0;      //結果
         int ope = -1;           //演算子をenumに基づいて判別
         bool afterNum = false;  //以前の入力が数字かどうか
@@ -601,7 +600,6 @@ namespace MfCalcCS
             //全てを初期化する
             num = 0;            //値を一時的に格納
             num1 = 0;           //値1を格納
-            num2 = 0;           //値2を格納
             result = 0;         //結果
             ope = -1;           //演算子をenumに基づいて判別
             afterNum = false;   //以前の入力が数字かどうか

@@ -35,10 +35,10 @@
             // calcButton
             // 
             this.calcButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.calcButton.Location = new System.Drawing.Point(312, 100);
-            this.calcButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calcButton.Location = new System.Drawing.Point(200, 79);
+            this.calcButton.Margin = new System.Windows.Forms.Padding(4);
             this.calcButton.Name = "calcButton";
-            this.calcButton.Size = new System.Drawing.Size(273, 138);
+            this.calcButton.Size = new System.Drawing.Size(300, 200);
             this.calcButton.TabIndex = 0;
             this.calcButton.Text = "電卓";
             this.calcButton.UseVisualStyleBackColor = true;
@@ -47,10 +47,10 @@
             // histButton
             // 
             this.histButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.histButton.Location = new System.Drawing.Point(312, 338);
-            this.histButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.histButton.Location = new System.Drawing.Point(200, 327);
+            this.histButton.Margin = new System.Windows.Forms.Padding(4);
             this.histButton.Name = "histButton";
-            this.histButton.Size = new System.Drawing.Size(273, 138);
+            this.histButton.Size = new System.Drawing.Size(300, 200);
             this.histButton.TabIndex = 1;
             this.histButton.Text = "履歴";
             this.histButton.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 566);
+            this.ClientSize = new System.Drawing.Size(682, 603);
             this.Controls.Add(this.histButton);
             this.Controls.Add(this.calcButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMenu";
             this.Text = "Form1";
             this.ResumeLayout(false);
