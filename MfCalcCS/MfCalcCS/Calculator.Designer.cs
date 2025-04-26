@@ -44,10 +44,11 @@
             this.resultButton = new System.Windows.Forms.Button();
             this.plusButton = new System.Windows.Forms.Button();
             this.minusButton = new System.Windows.Forms.Button();
-            this.multipleButton = new System.Windows.Forms.Button();
+            this.multiplicationButton = new System.Windows.Forms.Button();
             this.divisionButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.resultBox = new System.Windows.Forms.TextBox();
+            this.calculationFormula = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // CtoMButton
@@ -200,12 +201,13 @@
             // 
             // plusButton
             // 
+            this.plusButton.BackColor = System.Drawing.Color.White;
             this.plusButton.Location = new System.Drawing.Point(316, 273);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(72, 132);
             this.plusButton.TabIndex = 15;
             this.plusButton.Text = "＋";
-            this.plusButton.UseVisualStyleBackColor = true;
+            this.plusButton.UseVisualStyleBackColor = false;
             this.plusButton.Click += new System.EventHandler(this.plusButton_Click);
             // 
             // minusButton
@@ -218,15 +220,15 @@
             this.minusButton.UseVisualStyleBackColor = true;
             this.minusButton.Click += new System.EventHandler(this.minusButton_Click);
             // 
-            // multipleButton
+            // multiplicationButton
             // 
-            this.multipleButton.Location = new System.Drawing.Point(238, 204);
-            this.multipleButton.Name = "multipleButton";
-            this.multipleButton.Size = new System.Drawing.Size(72, 63);
-            this.multipleButton.TabIndex = 17;
-            this.multipleButton.Text = "×";
-            this.multipleButton.UseVisualStyleBackColor = true;
-            this.multipleButton.Click += new System.EventHandler(this.multipleButton_Click);
+            this.multiplicationButton.Location = new System.Drawing.Point(238, 204);
+            this.multiplicationButton.Name = "multiplicationButton";
+            this.multiplicationButton.Size = new System.Drawing.Size(72, 63);
+            this.multiplicationButton.TabIndex = 17;
+            this.multiplicationButton.Text = "×";
+            this.multiplicationButton.UseVisualStyleBackColor = true;
+            this.multiplicationButton.Click += new System.EventHandler(this.multipleButton_Click);
             // 
             // divisionButton
             // 
@@ -253,24 +255,37 @@
             this.resultBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.resultBox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.resultBox.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.resultBox.Location = new System.Drawing.Point(63, 85);
+            this.resultBox.Location = new System.Drawing.Point(82, 85);
             this.resultBox.MaxLength = 10;
             this.resultBox.Name = "resultBox";
             this.resultBox.ReadOnly = true;
-            this.resultBox.Size = new System.Drawing.Size(343, 87);
+            this.resultBox.Size = new System.Drawing.Size(306, 87);
             this.resultBox.TabIndex = 20;
             this.resultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.resultBox.TextChanged += new System.EventHandler(this.resultBox_TextChanged);
+            // 
+            // calculationFormula
+            // 
+            this.calculationFormula.BackColor = System.Drawing.Color.Gainsboro;
+            this.calculationFormula.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.calculationFormula.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.calculationFormula.Location = new System.Drawing.Point(82, 48);
+            this.calculationFormula.Name = "calculationFormula";
+            this.calculationFormula.ReadOnly = true;
+            this.calculationFormula.Size = new System.Drawing.Size(305, 30);
+            this.calculationFormula.TabIndex = 21;
+            this.calculationFormula.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 589);
+            this.Controls.Add(this.calculationFormula);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.divisionButton);
-            this.Controls.Add(this.multipleButton);
+            this.Controls.Add(this.multiplicationButton);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.resultButton);
@@ -312,9 +327,10 @@
         private System.Windows.Forms.Button resultButton;
         private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button minusButton;
-        private System.Windows.Forms.Button multipleButton;
+        private System.Windows.Forms.Button multiplicationButton;
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.TextBox resultBox;
+        private System.Windows.Forms.TextBox calculationFormula;
     }
 }
