@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+using System.IO;
 
 namespace MfCalcCS
 {
@@ -59,11 +60,11 @@ namespace MfCalcCS
 
         private string addZero(int zeroNum)　//小数点以下末尾に０を追加する関数
         {
-            if(wasDot==true)
+            if (wasDot == true)
             {
                 for (int i = 0; i < dotCount; i++)
                 {
-                    zeros =string.Concat(Enumerable.Repeat("0", zeroNum));
+                    zeros = string.Concat(Enumerable.Repeat("0", zeroNum));
                 }
             }
             else
@@ -82,7 +83,7 @@ namespace MfCalcCS
             minusButton.BackColor = Color.White;
             multiplicationButton.BackColor = Color.White;
             divisionButton.BackColor = Color.White;
-            if(ope==(int)Operator.plus)
+            if (ope == (int)Operator.plus)
             {
                 plusButton.BackColor = Color.LightGray;
             }
@@ -98,7 +99,7 @@ namespace MfCalcCS
             {
                 divisionButton.BackColor = Color.LightGray;
             }
-        }       
+        }
 
         #region //数字ボタンがクリックされたときの処理
 
@@ -113,7 +114,7 @@ namespace MfCalcCS
                 {
 
                 }
-                else if (dotFlg==true)
+                else if (dotFlg == true)
                 {
                     dotCount++;
                     zeroCount++;
@@ -124,7 +125,7 @@ namespace MfCalcCS
                     num *= 10;
                 }
             }
-            else 
+            else
             {
                 resultBox.Text = "0";
                 num = 0;
@@ -141,17 +142,17 @@ namespace MfCalcCS
             calculationFormula.Text = "";
             addNum = 1;
 
-            if(equalFlg==true)
+            if (equalFlg == true)
             {
-                
+
             }
             else if (afterNum == true)
             {
                 if (dotFlg == true)
                 {
                     dotCount++;
-                    zeroCount=0;
-                    for (int i = 0;i < dotCount; i++)
+                    zeroCount = 0;
+                    for (int i = 0; i < dotCount; i++)
                     {
                         addNum *= 0.1;
                     }
@@ -163,7 +164,7 @@ namespace MfCalcCS
                     num += addNum;
                 }
             }
-            else 
+            else
             {
                 num = addNum;
             }
@@ -474,8 +475,8 @@ namespace MfCalcCS
             afterNum = true;
 
         }
-#endregion
-#endregion
+        #endregion
+        #endregion
 
         private void dotButton_Click(object sender, EventArgs e)
         {
@@ -513,7 +514,7 @@ namespace MfCalcCS
         private void minusButton_Click(object sender, EventArgs e)
         {
             //一時的に要素を保存し、マイナスフラグを立てる、数字フラグをfalseに
-            ope = (int)Operator.minus; 
+            ope = (int)Operator.minus;
             num1 = num;
             num = 0;
             resultBox.Text = "-";
@@ -590,7 +591,7 @@ namespace MfCalcCS
                 calculationFormula.Text = num1.ToString() + "÷" + num.ToString() + "=";
                 result = num1 / num;
             }
-            num = result;
+            num1 = result;
             equalFlg = true;
             resultBox.Text = result.ToString();
         }
@@ -611,12 +612,84 @@ namespace MfCalcCS
             addNum = 0;         //追加する数字
             resultBox.Text = "";
             calculationFormula.Text = "";
+            equalFlg = false;
 
             plusButton.BackColor = Color.White;
             minusButton.BackColor = Color.White;
             multiplicationButton.BackColor = Color.White;
             divisionButton.BackColor = Color.White;
         }
-    }
 
+
+        IEnumerable<string> FindFiles(string folderName, string textName)
+        {
+            List<string> searchFiles = new List<string>();
+
+            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+            foreach (var file in foundFiles)
+            {
+                // The file name will contain the full path, so only check the end of it
+                if (file.EndsWith(textName))
+                {
+                    searchFiles.Add(file);
+                }
+            }
+
+            return searchFiles;
+        }
+
+
+        private void registButton_Click(object sender, EventArgs e)
+        {
+            //公式を登録
+        }
+
+        private void callFormula_Click(object sender, EventArgs e)
+        {
+            //公式を呼び出し
+            var readFiles = FindFiles("Texts", "readTest");
+
+            #region//テスト
+
+            ////フォルダの作成
+            //string folderPath = Path.Combine(Directory.GetCurrentDirectory(),"createTest");
+            //Directory.CreateDirectory(folderPath);
+
+            ////テキストの作成
+            //string textPath = Path.Combine(folderPath, "readTest.txt");
+            ////File.WriteAllText(textPath, String.Empty);
+
+            ////テキストの変更           
+            //File.AppendAllText(textPath, $"AddData{Environment.NewLine}");
+
+            ////テキスト内容の確認
+            //string intext = File.ReadAllText(textPath);
+            //MessageBox.Show(intext,
+            //    "success",
+            //    MessageBoxButtons.OK,
+            //    MessageBoxIcon.Information);
+
+            #endregion
+        }
+
+
+        private NameImput _nameInputInstance;
+
+        private void saveResultButton_Click(object sender, EventArgs e)
+        {
+            //計算結果を保存
+            string toImput=resultBox.Text; 
+            
+
+            //ポップアップウィンドウ→名前入力を受け付け
+            if (_nameInputInstance == null || _nameInputInstance.IsDisposed)
+            {
+                _nameInputInstance = new NameImput();
+            }
+            //this.Hide();　ResultBox.txtを保持するため
+            _nameInputInstance.Show();
+
+        } 
+    }
 }

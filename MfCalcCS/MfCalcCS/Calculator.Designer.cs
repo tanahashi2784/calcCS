@@ -79,6 +79,7 @@
             this.saveResultButton.TabIndex = 2;
             this.saveResultButton.Text = "計算結果を保存";
             this.saveResultButton.UseVisualStyleBackColor = true;
+            this.saveResultButton.Click += new System.EventHandler(this.saveResultButton_Click);
             // 
             // no1
             // 
@@ -288,8 +289,9 @@
             this.registButton.Name = "registButton";
             this.registButton.Size = new System.Drawing.Size(202, 100);
             this.registButton.TabIndex = 22;
-            this.registButton.Text = "関数・公式を登録";
+            this.registButton.Text = "公式を登録";
             this.registButton.UseVisualStyleBackColor = true;
+            this.registButton.Click += new System.EventHandler(this.registButton_Click);
             // 
             // callFormula
             // 
@@ -301,8 +303,9 @@
             this.callFormula.Name = "callFormula";
             this.callFormula.Size = new System.Drawing.Size(202, 100);
             this.callFormula.TabIndex = 23;
-            this.callFormula.Text = "関数・公式を呼び出し";
+            this.callFormula.Text = "公式を呼び出し";
             this.callFormula.UseVisualStyleBackColor = true;
+            this.callFormula.Click += new System.EventHandler(this.callFormula_Click);
             // 
             // Calculator
             // 
@@ -360,9 +363,9 @@
         private System.Windows.Forms.Button multiplicationButton;
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.TextBox calculationFormula;
         private System.Windows.Forms.Button registButton;
         private System.Windows.Forms.Button callFormula;
+        public System.Windows.Forms.TextBox resultBox;
     }
 }

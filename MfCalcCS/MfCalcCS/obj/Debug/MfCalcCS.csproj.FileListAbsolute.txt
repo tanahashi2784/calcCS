@@ -20,3 +20,4 @@ D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.GenerateResou
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.CoreCompileInputs.cache
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.pdb
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.NameImput.resources

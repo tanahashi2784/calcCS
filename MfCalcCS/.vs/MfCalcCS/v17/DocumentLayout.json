@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|d:\\notegitrepos\\calccs\\mfcalccs\\mfcalccs\\nameimput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\nameimput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|d:\\notegitrepos\\calccs\\mfcalccs\\mfcalccs\\nameimput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\nameimput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|d:\\notegitrepos\\calccs\\mfcalccs\\mfcalccs\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +25,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|D:\\NoteGitRepos\\calcCS\\MfCalcCS\\mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17A3C7C7-10C4-4D17-8115-EF1C89F303AD}|MfCalcCS\\MfCalcCS.csproj|solutionrelative:mfcalccs\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "MainMenu.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\MainMenu.cs",
@@ -51,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\MainMenu.cs",
               "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\MainMenu.cs",
               "RelativeToolTip": "MfCalcCS\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvx0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T00:35:34.908Z",
               "IsPinned": true,
@@ -65,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Calculator.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\Calculator.cs",
@@ -84,7 +92,7 @@
               "RelativeDocumentMoniker": "MfCalcCS\\Calculator.cs",
               "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\Calculator.cs",
               "RelativeToolTip": "MfCalcCS\\Calculator.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvxEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADkCAAAAAAAAAAAowLACAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T07:26:52.448Z",
               "IsPinned": true,
@@ -92,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "History.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\History.cs",
               "RelativeDocumentMoniker": "MfCalcCS\\History.cs",
@@ -115,6 +123,31 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T07:49:43.423Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NameImput.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\NameImput.cs",
+              "RelativeDocumentMoniker": "MfCalcCS\\NameImput.cs",
+              "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\NameImput.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "MfCalcCS\\NameImput.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:45:03.191Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NameImput.cs",
+              "DocumentMoniker": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\NameImput.cs",
+              "RelativeDocumentMoniker": "MfCalcCS\\NameImput.cs",
+              "ToolTip": "D:\\NoteGitRepos\\calcCS\\MfCalcCS\\MfCalcCS\\NameImput.cs",
+              "RelativeToolTip": "MfCalcCS\\NameImput.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:45:37.378Z",
               "EditorCaption": ""
             }
           ]
