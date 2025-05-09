@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MfCalcCS
 {
@@ -66,15 +67,17 @@ namespace MfCalcCS
                 {
                     zeros = string.Concat(Enumerable.Repeat("0", zeroNum));
                 }
+                return zeros;
             }
             else
             {
                 for (int i = 0; i < dotCount; i++)
                 {
-                    zeros = "." + string.Concat(Enumerable.Repeat("0", zeroNum));
+                    zeros = string.Concat(Enumerable.Repeat("0", zeroNum));
                 }
+                zeros = "." + zeros;
+                return zeros;
             }
-            return zeros;
         }
 
         private void colorChange()  //演算子ボタン背景色変更
@@ -123,6 +126,7 @@ namespace MfCalcCS
                 else
                 {
                     num *= 10;
+                    resultBox.Text = num.ToString();
                 }
             }
             else
@@ -169,6 +173,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if(dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -204,6 +213,11 @@ namespace MfCalcCS
             else
             {
                 num = addNum;
+            }
+
+            if (dotFlg == true)
+            {
+                wasDot = true;
             }
 
             resultBox.Text = num.ToString();
@@ -243,6 +257,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if (dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -278,6 +297,11 @@ namespace MfCalcCS
             else
             {
                 num = addNum;
+            }
+
+            if (dotFlg == true)
+            {
+                wasDot = true;
             }
 
             resultBox.Text = num.ToString();
@@ -318,6 +342,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if (dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -356,6 +385,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if (dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -391,6 +425,11 @@ namespace MfCalcCS
             else
             {
                 num = addNum;
+            }
+
+            if (dotFlg == true)
+            {
+                wasDot = true;
             }
 
             resultBox.Text = num.ToString();
@@ -431,6 +470,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if (dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -469,6 +513,11 @@ namespace MfCalcCS
                 num = addNum;
             }
 
+            if (dotFlg == true)
+            {
+                wasDot = true;
+            }
+
             resultBox.Text = num.ToString();
 
             //数字フラグをtrueに
@@ -483,7 +532,7 @@ namespace MfCalcCS
             //ドットフラグを立てる、以降入力される数字に0.1*n
             if (dotFlg == true)
             {
-                wasDot = true;
+
             }
             else
             {
@@ -496,7 +545,14 @@ namespace MfCalcCS
         {
             //一時的に要素を保存し、プラスフラグを立てる、数字フラグ・ドットフラグをfalseに
             ope = (int)Operator.plus;
-            num1 = num;
+            if (equalFlg == true)
+            {
+
+            }
+            else
+            {
+                num1 = num;
+            }
             num = 0;
             resultBox.Text = "+";
             colorChange();
@@ -515,7 +571,14 @@ namespace MfCalcCS
         {
             //一時的に要素を保存し、マイナスフラグを立てる、数字フラグをfalseに
             ope = (int)Operator.minus;
-            num1 = num;
+            if (equalFlg == true)
+            {
+
+            }
+            else
+            {
+                num1 = num;
+            }
             num = 0;
             resultBox.Text = "-";
             colorChange();
@@ -534,7 +597,14 @@ namespace MfCalcCS
         {
             //一時的に要素を保存し、掛け算フラグを立てる、数字フラグをfalseに
             ope = (int)Operator.multiplication;
-            num1 = num;
+            if (equalFlg == true)
+            {
+
+            }
+            else
+            {
+                num1 = num;
+            }
             num = 0;
             resultBox.Text = "×";
             colorChange();
@@ -553,7 +623,14 @@ namespace MfCalcCS
         {
             //一時的に要素を保存し、割り算フラグを立てる、数字フラグをfalseに
             ope = (int)Operator.division;
-            num1 = num;
+            if(equalFlg==true)
+            {
+
+            }
+            else
+            {
+                num1 = num;
+            }
             num = 0;
             resultBox.Text = "÷";
             colorChange();
@@ -676,10 +753,19 @@ namespace MfCalcCS
 
         private NameImput _nameInputInstance;
 
-        private void saveResultButton_Click(object sender, EventArgs e)
+        private string _toImput;
+
+        public string toImput
+        {
+            get { return _toImput; }
+            set { _toImput = resultBox.Text; } 
+        }
+
+        public void saveResultButton_Click(object sender, EventArgs e)
         {
             //計算結果を保存
-            string toImput=resultBox.Text; 
+
+            
             
 
             //ポップアップウィンドウ→名前入力を受け付け
@@ -688,7 +774,7 @@ namespace MfCalcCS
                 _nameInputInstance = new NameImput();
             }
             //this.Hide();　ResultBox.txtを保持するため
-            _nameInputInstance.Show();
+            _nameInputInstance.ShowDialog();
 
         } 
     }

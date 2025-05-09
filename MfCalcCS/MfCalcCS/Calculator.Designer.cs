@@ -345,7 +345,6 @@
         #endregion
 
         private System.Windows.Forms.Button CtoMButton;
-        private System.Windows.Forms.Button saveResultButton;
         private System.Windows.Forms.Button no1;
         private System.Windows.Forms.Button no2;
         private System.Windows.Forms.Button no3;
@@ -367,5 +366,6 @@
         private System.Windows.Forms.Button registButton;
         private System.Windows.Forms.Button callFormula;
         public System.Windows.Forms.TextBox resultBox;
+        public System.Windows.Forms.Button saveResultButton;
     }
 }
