@@ -15,6 +15,7 @@ namespace MfCalcCS
         public History()
         {
             InitializeComponent();
+
         }
 
         private MainMenu _mainMenuInstance;
@@ -27,6 +28,22 @@ namespace MfCalcCS
             }
             this.Hide();
             _mainMenuInstance.Show();
+        }
+
+        private void callResultButton_Click(object sender, EventArgs e)
+        {
+
+            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
+
+            this.Controls.Add(tableLayoutPanel);
+
+            tableLayoutPanel.ColumnCount = 2;
+            tableLayoutPanel.
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

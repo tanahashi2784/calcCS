@@ -1,0 +1,6 @@
+a
+15
+fixedData
+9×8=72
+データ名：wasureta
+9+6=15

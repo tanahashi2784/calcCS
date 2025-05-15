@@ -104,6 +104,10 @@ namespace MfCalcCS
             }
         }
 
+
+
+        //***************************************
+
         #region //数字ボタンがクリックされたときの処理
 
         private void no0_Click(object sender, EventArgs e)
@@ -527,17 +531,14 @@ namespace MfCalcCS
         #endregion
         #endregion
 
+
+        //****************************************
+
+
         private void dotButton_Click(object sender, EventArgs e)
         {
             //ドットフラグを立てる、以降入力される数字に0.1*n
-            if (dotFlg == true)
-            {
-
-            }
-            else
-            {
-                dotFlg = true;
-            }
+            dotFlg = true;
         }
 
 
@@ -753,14 +754,6 @@ namespace MfCalcCS
 
         private NameImput _nameInputInstance;
 
-        private string _toImput;
-
-        public string toImput
-        {
-            get { return _toImput; }
-            set { _toImput = resultBox.Text; } 
-        }
-
         public void saveResultButton_Click(object sender, EventArgs e)
         {
             //計算結果を保存
@@ -771,7 +764,7 @@ namespace MfCalcCS
             //ポップアップウィンドウ→名前入力を受け付け
             if (_nameInputInstance == null || _nameInputInstance.IsDisposed)
             {
-                _nameInputInstance = new NameImput();
+                _nameInputInstance = new NameImput(resultBox.Text,calculationFormula.Text);
             }
             //this.Hide();　ResultBox.txtを保持するため
             _nameInputInstance.ShowDialog();
