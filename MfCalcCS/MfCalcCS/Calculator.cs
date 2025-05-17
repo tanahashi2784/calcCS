@@ -698,60 +698,6 @@ namespace MfCalcCS
             divisionButton.BackColor = Color.White;
         }
 
-
-        IEnumerable<string> FindFiles(string folderName, string textName)
-        {
-            List<string> searchFiles = new List<string>();
-
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
-            foreach (var file in foundFiles)
-            {
-                // The file name will contain the full path, so only check the end of it
-                if (file.EndsWith(textName))
-                {
-                    searchFiles.Add(file);
-                }
-            }
-
-            return searchFiles;
-        }
-
-
-        private void registButton_Click(object sender, EventArgs e)
-        {
-            //公式を登録
-        }
-
-        private void callFormula_Click(object sender, EventArgs e)
-        {
-            //公式を呼び出し
-            var readFiles = FindFiles("Texts", "readTest");
-
-            #region//テスト
-
-            ////フォルダの作成
-            //string folderPath = Path.Combine(Directory.GetCurrentDirectory(),"createTest");
-            //Directory.CreateDirectory(folderPath);
-
-            ////テキストの作成
-            //string textPath = Path.Combine(folderPath, "readTest.txt");
-            ////File.WriteAllText(textPath, String.Empty);
-
-            ////テキストの変更           
-            //File.AppendAllText(textPath, $"AddData{Environment.NewLine}");
-
-            ////テキスト内容の確認
-            //string intext = File.ReadAllText(textPath);
-            //MessageBox.Show(intext,
-            //    "success",
-            //    MessageBoxButtons.OK,
-            //    MessageBoxIcon.Information);
-
-            #endregion
-        }
-
-
         private NameImput _nameInputInstance;
 
         public void saveResultButton_Click(object sender, EventArgs e)
