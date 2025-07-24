@@ -21,3 +21,4 @@ D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.csproj.CoreCompileIn
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.pdb
 D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.NameImput.resources
+D:\NoteGitRepos\calcCS\MfCalcCS\MfCalcCS\obj\Debug\MfCalcCS.exe.config

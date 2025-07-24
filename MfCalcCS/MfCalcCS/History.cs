@@ -43,7 +43,7 @@ namespace MfCalcCS
         private void callResultButton_Click(object sender, EventArgs e)
         {
             int boxNum = 0;
-            string textPath = Path.Combine(Directory.GetCurrentDirectory(),"SaveData", "Result.txt");
+            string textPath = Path.Combine(Directory.GetCurrentDirectory(), "SaveData", "Result.txt");
             List<string> lines = new List<string>();
 
             //一覧を作成
@@ -72,22 +72,33 @@ namespace MfCalcCS
 
             tableLayoutPanel.ColumnCount = 2;
             tableLayoutPanel.RowCount = lines.Count;
-            tableLayoutPanel.Location=new Point(20,20);
-            tableLayoutPanel.Size = new Size(200, 200);
-            
-            TextBox[] textBoxes = new TextBox[boxNum];
-
-            for (int i = 0; i < boxNum; i++)
-            {
-                textBoxes[i].Text = lines[i];
-            }
+            tableLayoutPanel.Location = new Point(100, 100);
+            tableLayoutPanel.Size = new Size(500, 500);
 
             this.Controls.Add(tableLayoutPanel);
+
+            TextBox[] textBoxes = new TextBox[boxNum];
+
+            for (int i = 0,locationX=0,locationY=0,addY=20 ; i < boxNum; i++)
+            {
+                textBoxes[i] = new TextBox();      // ← ここが重要！
+                textBoxes[i].Text = lines[i];
+                textBoxes[i].Location=new Point(locationX,locationY);
+                textBoxes[i].Size = new Size(100, 30);
+                this.Controls.Add(textBoxes[i]);
+                locationY = locationY + addY;
+
+            }
+            
+
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
