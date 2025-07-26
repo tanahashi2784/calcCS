@@ -1,6 +1,6 @@
-a
-15
+﻿データ名
+途中式と結果
 fixedData
 9×8=72
-データ名：wasureta
+wasureta
 9+6=15

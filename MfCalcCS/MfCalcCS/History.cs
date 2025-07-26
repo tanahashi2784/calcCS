@@ -13,6 +13,7 @@ namespace MfCalcCS
 {
     public partial class History : Form
     {
+        private CustomTextBox1[] textBoxes;
         public History()
         {
             InitializeComponent();
@@ -72,33 +73,86 @@ namespace MfCalcCS
 
             tableLayoutPanel.ColumnCount = 2;
             tableLayoutPanel.RowCount = lines.Count;
-            tableLayoutPanel.Location = new Point(100, 100);
+            tableLayoutPanel.Location = new Point(0, 0);
             tableLayoutPanel.Size = new Size(500, 500);
 
-            this.Controls.Add(tableLayoutPanel);
+            //this.Controls.Add(tableLayoutPanel);
 
-            TextBox[] textBoxes = new TextBox[boxNum];
-
-            for (int i = 0,locationX=0,locationY=0,addY=20 ; i < boxNum; i++)
+            textBoxes = new CustomTextBox1[boxNum];
+            for (int i = 0,locationX=0,locationY=0,addY=30,addX=150; i < boxNum; i++)
             {
-                textBoxes[i] = new TextBox();      // ← ここが重要！
+                textBoxes[i] = new CustomTextBox1();      // ← ここが重要！
                 textBoxes[i].Text = lines[i];
                 textBoxes[i].Location=new Point(locationX,locationY);
-                textBoxes[i].Size = new Size(100, 30);
+                textBoxes[i].Size = new Size(addX, addY);
+                textBoxes[i].Font = new Font(Font.FontFamily, 16);
+                textBoxes[i].textID = i;
+                textBoxes[i].ReadOnly = true;
                 this.Controls.Add(textBoxes[i]);
-                locationY = locationY + addY;
+                textBoxes[i].ContextMenuStrip = contextMenuStrip1;
+                if (i % 2 == 1)
+                {
+                    locationY = locationY + addY;
+                    if(i!=0)locationX = locationX - addX;
+                }
+                else locationX = locationX + addX;
 
             }
+
+            tableLayoutPanel.SendToBack();
+
+        }
+
+        private void toolStripMenuItemDelete_Click(object sender, EventArgs e)
+        {
+            string textPath = Path.Combine(Directory.GetCurrentDirectory(), "SaveData", "Result.txt");
+            List<string> lines = new List<string>();
             
 
+            // クリックされたメニュー項目 (ToolStripMenuItem) を取得
+            ToolStripMenuItem clickedMenuItem = sender as ToolStripMenuItem;
 
+            if (clickedMenuItem != null)
+            {
+                // クリックされたメニュー項目から、その親の ContextMenuStrip を取得
+                ContextMenuStrip ownerContextMenu = clickedMenuItem.Owner as ContextMenuStrip;
+
+                if (ownerContextMenu != null)
+                {
+                    // ContextMenuStripから、メニューが表示された元のコントロールを取得！
+                    Control sourceControl = ownerContextMenu.SourceControl;
+
+                    CustomTextBox1 sourceTextBox= (CustomTextBox1)sourceControl;
+
+                    if (sourceControl != null)
+                    {
+                        if (sourceTextBox.textID < 2)
+                        {
+                            if (sourceTextBox.textID % 2 == 0)
+                            {
+                                //テキスト内容の
+                                try
+                                {
+                                    //lines[sourceTextBox.textID].
+                                    
+                                }
+                                catch (FileNotFoundException)
+                                {
+                                    ErrorMessage("NO FILE");
+                                    return;
+                                }
+                                catch (IOException ex)
+                                {
+                                    ErrorMessage(ex.Message);
+                                    return;
+                                }
+                                textBoxes[sourceTextBox.textID].Dispose();
+                                textBoxes[sourceTextBox.textID + 1].Dispose();
+                            }
+                        }
+                    }
+                }
+            }
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

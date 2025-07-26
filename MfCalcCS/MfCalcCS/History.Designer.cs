@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.HtoMButton = new System.Windows.Forms.Button();
             this.callResultButton = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // HtoMButton
@@ -60,6 +64,21 @@
             this.callResultButton.UseVisualStyleBackColor = true;
             this.callResultButton.Click += new System.EventHandler(this.callResultButton_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemDelete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 28);
+            // 
+            // toolStripMenuItemDelete
+            // 
+            this.toolStripMenuItemDelete.Name = "toolStripMenuItemDelete";
+            this.toolStripMenuItemDelete.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuItemDelete.Text = "結果の削除";
+            this.toolStripMenuItemDelete.Click += new System.EventHandler(this.toolStripMenuItemDelete_Click);
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -72,6 +91,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "History";
             this.Text = "History";
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +101,7 @@
 
         private System.Windows.Forms.Button HtoMButton;
         private System.Windows.Forms.Button callResultButton;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDelete;
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomTextBox1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox1.Designer.cs">
+      <DependentUpon>CustomTextBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
